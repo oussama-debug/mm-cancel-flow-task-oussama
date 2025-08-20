@@ -1,10 +1,10 @@
 'use client';
 
 export default function FoundJobAcceptedrSubscriptionStep() {
-    return (<div className="space-y-3 w-full py-2">
+    return (<div className="space-y-3 mt-4 w-full py-2">
         <div className="space-y-4 flex flex-col border-b pb-6 border-zinc-200">
-            <h3 className="text-[24px] text-pretty md:text-[36px] mb-6 font-semibold font-sans leading-[36px] text-gray-800">Great choice, mate!</h3>
-            <p className="text-gray-600 text-[34px] leading-[36px] font-sans font-semibold">
+            <h3 className="text-[30px] text-pretty md:text-[36px] mb-6 font-semibold font-sans leading-[36px] text-[#41403D]">Great choice, mate!</h3>
+            <p className="text-[#41403D] text-[34px] leading-[36px] font-sans font-semibold">
                 You're still on the path to your dream role. <span className="text-[#996EFF]">{"Let’s make it happen together!"}</span>
             </p>
             <div className="flex flex-col justify-start items-start">
