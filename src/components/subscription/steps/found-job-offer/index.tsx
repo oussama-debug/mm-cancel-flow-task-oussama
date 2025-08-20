@@ -1,6 +1,9 @@
 'use client';
 
+import { useSubscriptionFlow } from "@/lib/store/subscription";
+
 export default function FoundJobOfferSubscriptionStep() {
+    const { acceptDiscountFoundJob } = useSubscriptionFlow()
     return (<div className="space-y-3 w-full py-2">
         <div className="space-y-6 flex flex-col border-b pb-6 border-zinc-200">
             <h3 className="text-[24px] text-pretty md:text-[36px] mb-6 font-semibold font-sans leading-[36px] text-gray-800">We built this to help you land the job, this makes it a little easier.</h3>
@@ -13,7 +16,7 @@ export default function FoundJobOfferSubscriptionStep() {
                     <h2 className="font-sans text-[26px] text-indigo-500 font-semibold">$12.50/month</h2>
                     <span className="line-through text-[20px] font-sans text-zinc-600">$25 /month</span>
                 </div>
-                <button className="bg-green-400 rounded-md w-full p-2 mt-2 rounded flex flex-row justify-center items-center">
+                <button className="bg-green-400 rounded-md w-full p-2 mt-2 rounded flex flex-row justify-center items-center" onClick={() => acceptDiscountFoundJob()}>
                     <span className="text-white font-sans font-medium text-[19px]">Get 50% off</span>
                 </button>
                 <span className="italic text-gray-500 mt-1 text-sm">You wont be charged until your next billing date</span>

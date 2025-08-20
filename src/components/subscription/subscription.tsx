@@ -11,7 +11,7 @@ import FoundJobSubscriptionStep from "./steps/found-job"
 import { cn } from "@/lib/utils"
 
 export function SubscriptionDrawer() {
-  const { is_cancel_flow_open, current_step, found_job_steps, toggleCancelFlow } = useSubscriptionFlow()
+  const { is_cancel_flow_open, current_step, toggleCancelFlow } = useSubscriptionFlow()
   const isDesktop = useMediaQuery("(min-width: 768px)")
 
   const content = {

@@ -3,13 +3,14 @@
 import { useSubscriptionFlow } from "@/lib/store/subscription";
 import Image from "next/image";
 import FoundJobOfferSubscriptionStep from "../found-job-offer";
+import FoundJobAcceptedrSubscriptionStep from "../found-job-accepted";
 
 export default function FoundJobSubscriptionStep() {
     const { found_job_steps} = useSubscriptionFlow()
 
     const content = {
         'show-offer': <FoundJobOfferSubscriptionStep />,
-        'offer-accepted': null,
+        'offer-accepted': <FoundJobAcceptedrSubscriptionStep />,
         'offer-denied': null
     }
 
